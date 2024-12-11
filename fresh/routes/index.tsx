@@ -1,14 +1,19 @@
+/* Frameworks */
 import Bootstrap from "../components/Bootstrap.tsx";
+import Adminlte from "../components/Adminlte.tsx";
 
-export default function Home() {
+/* Components */
+import TopBar from "../components/TopBar/TopBar.tsx";
+
+export default function Index() {
   return (
     <>
       <Bootstrap />
-      <head>
-        <link rel="stylesheet" href="/adminlte.css" />
-      </head>
+      <Adminlte />
       <body class="bg-body-tertiary">
-        <div class="app-wrapper"></div>
+        <div class="app-wrapper">
+          <TopBar class="app-header" />
+        </div>
       </body>
     </>
   );
